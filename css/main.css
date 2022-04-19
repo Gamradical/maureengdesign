@@ -1,0 +1,312 @@
+/***** BASE STYLES *****/
+
+body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+
+/***** GRID *****/
+
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1200px;
+  }
+.half-width {
+    float: left;
+    width: 600px;
+}
+.third-width {
+    float: left;
+    width: 400px;
+}
+
+/***** HEADER *****/
+
+/***** top section with nav *****/
+
+#home header {
+  background-color: #800000;
+  background-size: cover;
+  border-bottom: 7px solid #474441;
+  height: 200px;
+  padding: 0;
+}
+
+#home header h1 {
+    color: #f1ebe2;
+    font-size:40px;
+    font-weight: lighter;
+    padding: 20px 0 90px 50px;
+}
+nav {
+    float: right;
+    padding-top: 75px;
+    padding-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    color: #f1ebe2;
+    font-size: 15px;
+    padding-left: 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/***** mission statement *****/
+
+#home h2 {
+    clear: both;
+    color: #9b9b9b;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+    font-weight: lighter;
+    line-height: 85px;
+    padding: 40px 0 20px 25px;
+    text-align: center;
+}
+#home h2 span {
+    color: #474441;
+}
+
+#home  h3 {
+    color: #474441;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/***** ABOUT *****/
+
+/***** top section with nav *****/
+
+#about header {
+    background-color: #800000;
+    background-size: cover;
+    border-bottom: 7px solid #474441;
+    height: 200px;
+    padding: 0;
+}
+
+#about h1 {
+  clear: both;
+  color: #f1ebe2;
+  font-size: 80px;
+  font-weight: lighter;
+  padding: 0px 0 100px 50px;
+  text-align: left;
+}
+
+/***** picture and about *****/
+
+#about p {
+    color: #474441;
+    font-size: 20px;
+    line-height: 37px;
+    padding-left:50px ;
+    padding-right: 50px;
+    text-align: justify;
+}
+#about img {
+    border-radius: 50%;
+    float: left;
+    height: 200px;
+    width: 175px;
+    margin-right: 20px;
+}
+
+/***** PORTFOLIO GALLERY *****/
+
+/***** top section with nav *****/
+
+#portfolio  header {
+    background-color: #800000;
+    background-size: cover;
+    border-bottom: 7px solid #474441;
+    height: 200px;
+    padding: 0;
+ }
+
+ #portfolio h1 {
+     clear: both;
+     color: #f1ebe2;
+     font-size: 80px;
+     font-weight: lighter;
+     padding: 0px 0 100px 50px;
+     text-align: left;
+}
+
+/***** main section with gallery *****/
+
+#portfolio h2 {
+    color: #474441;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    padding-top: 25px;
+}
+#portfolio h2 span {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+}
+
+ #portfolio img {
+    padding: 25px 50px 25px;
+    vertical-align: middle;
+ }
+
+ body {
+    margin: 0;
+ }
+
+ * {
+    box-sizing: border-box;
+ }
+
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+    position: relative;
+ }
+
+ /* Hide the images by default */
+ .mySlides {
+    display: none;
+ }
+
+ /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+    cursor: pointer;
+ }
+
+ /* Next & previous buttons */
+ .prev,
+ .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: #474441;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      webkit-user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #f1ebe2;
+ }
+
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+ }
+
+ /* Container for image text */
+ .caption-container {
+      font-family: 'Kaushan Script', cursive;
+      font-size: 25px;
+      text-align: center;
+      background-color: #800000;
+      padding: 2px 16px;
+      color: #f1ebe2;
+ }
+
+ .caption-container span {
+       font-family: 'Raleway', sans-serif;
+       font-style: italic;
+       font-size: 15px;
+ }
+
+ .row:after {
+       content: "";
+       display: table;
+       clear: both;
+ }
+
+ /* Six columns side by side */
+ .column {
+       float: left;
+       width: 16.66%;
+ }
+
+ /* Add a transparency effect for thumnbail images */
+ .demo {
+      opacity: 0.6;
+ }
+
+ .active,
+ .demo:hover {
+      opacity: 1;
+ }
+
+
+/***** CONTACT PAGE *****/
+
+/***** top section with nav *****/
+
+#contact header {
+    background-color: #800000;
+    background-size: cover;
+    border-bottom: 7px solid #474441;
+    height: 200px;
+    padding: 0;
+}
+
+#contact h1 {
+      clear: both;
+      color: #f1ebe2;
+      font-size: 80px;
+      font-weight: lighter;
+      padding: 0px 0 100px 25px;
+      text-align: left;
+}
+
+/***** links for email and social media *****/
+
+#contact h3 {
+      color: #9b9b9b;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 50px;
+      font-weight: lighter;
+      text-align: center;
+}
+
+h2 {
+      color: #474441;
+      font-size: 35px;
+      font-weight: lighter;
+      text-align: center;
+      align: center;
+}
+
+h2 img {
+      padding-right: 125px;
+      padding-top: 15px;
+}
+h2 span {
+      font-size: 40;
+      font-weight: bold;
+}
+
+#contact img{
+      padding-left: 150px;
+}

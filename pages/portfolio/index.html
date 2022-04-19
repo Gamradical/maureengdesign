@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Work | Portfolio</title>
+        <style>
+          body {
+            background-image: url("../../img/linen-two.jpg");
+            background-repeat: repeat;
+            background-color: #f1ebe2;
+            }
+        </style>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Fonts and Stylesheets-->
+
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" type="text/css">
+    </head>
+    <main id="portfolio">
+
+<!--Top section with nav-->
+
+        <header>
+            <div class="full-width">
+                <div class="half-width">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="half-width">
+                  <nav>
+                    <ul>
+                       <li><a href="../../index.html">Home</a></li>
+                       <li><a href="../about/index.html">About</a></li>
+                       <li><a href="../contact/index.html">Contact</a></li>
+                     </ul>
+                  </nav>
+                </div>
+            </div>
+        </header>
+
+<!--Slideshow/Gallery-->
+
+        <body>
+            <h2 style="text-align:center">Slideshow Gallery<br>
+                                      <span>Select a tab and scroll down to view full project.</span></h2>
+              <div class="container">
+                  <div class="row">
+                      <div class="column">
+                          <img class="demo cursor" src="../../img/jubilee_austen.png" style="width:100%" onclick="currentSlide(1)" alt="Jubilee Austen: Web Developement<br><span>HTML and CSS were used to create a one page site from a Skillcrush design comp.</span>">
+                      </div>
+                      <div class="column">
+                          <img class="demo cursor" src="../../img/rogue_pickings.png" style="width:100%" onclick="currentSlide(2)" alt="Rogue Pickings: Web Developement<br><span>A Skillcrush design comp was used to create this project.  All details (font, color, grid, images etc...) were extracted<br> from the given Adobe PSD and then used to recreate the format using HTML and CSS.">
+                      </div>
+                </div>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                        <img src="../../img/jubilee_austen.png" alt="Jubilee Austen Project" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 2</div>
+                        <img src="../../img/rogue_pickings.png" alt="Rogue Pickings Project" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+      </main>
+    </body>
+</html>
